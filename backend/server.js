@@ -2,14 +2,13 @@ const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 
 const usersFilePath = "./users.json";
 
-// Function to read users from the JSON file
 const readUsers = () => {
   if (!fs.existsSync(usersFilePath)) {
     return [];
@@ -18,18 +17,15 @@ const readUsers = () => {
   return data ? JSON.parse(data) : [];
 };
 
-// Function to write users to the JSON file
 const writeUsers = (data) => {
   fs.writeFileSync(usersFilePath, JSON.stringify(data, null, 2), "utf-8");
 };
 
-// Route to get all users
 app.get("/users", (req, res) => {
   const users = readUsers();
   res.json(users);
 });
 
-// Route to add a new user
 app.post("/users", (req, res) => {
   const users = readUsers();
   const newUser = req.body;
@@ -43,7 +39,6 @@ app.post("/users", (req, res) => {
   res.status(201).json(newUser);
 });
 
-// Route to add a new pokemon to a user
 app.post("/users", (req, res) => {
   const users = readUsers();
   const newUser = req.body;
@@ -57,7 +52,6 @@ app.post("/users", (req, res) => {
   res.status(201).json(newUser);
 });
 
-// Route to update a pokemon for a user
 app.put("/users/:userName/pokemons/:pokemonName", (req, res) => {
   const { userName, pokemonName } = req.params;
   const updatedPokemon = req.body;
@@ -81,7 +75,6 @@ app.put("/users/:userName/pokemons/:pokemonName", (req, res) => {
   res.status(200).json(updatedPokemon);
 });
 
-// Route to delete a pokemon from a user
 app.delete("/users/:userName/pokemons/:pokemonName", (req, res) => {
   const { userName, pokemonName } = req.params;
 
