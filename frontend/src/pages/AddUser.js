@@ -68,7 +68,7 @@ const AddUser = () => {
     };
 
     axios
-      .post("http://localhost:3001/users", userWithPokemon)
+      .post(`${process.env.API_ENDPOINT}/users`, userWithPokemon)
       .then((response) => {
         alert("User and Pokémon added successfully");
         setUserName("");

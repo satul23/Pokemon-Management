@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users")
+      .get(`${process.env.API_ENDPOINT}/users`)
       .then((response) => {
         setUsers(response.data);
       })

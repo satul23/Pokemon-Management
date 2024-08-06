@@ -26,7 +26,7 @@ const AddPokemon = () => {
 
     // Fetch user names for dropdown list
     axios
-      .get("http://localhost:3001/users")
+      .get(`${process.env.API_ENDPOINT}/users`)
       .then((response) => {
         const names = response.data.map((user) => user.name);
         setUserList(names);
