@@ -47,7 +47,7 @@ const AllPokemons = () => {
     e.preventDefault();
     axios
       .put(
-        `http://localhost:3001/users/${currentPokemon.userName}/pokemons/${currentPokemon.pokemonName}`,
+        `${process.env.API_ENDPOINT}/users/${currentPokemon.userName}/pokemons/${currentPokemon.pokemonName}`,
         currentPokemon
       )
       .then((response) => {
@@ -71,7 +71,7 @@ const AllPokemons = () => {
 
   const handleDelete = (userName, pokemonName) => {
     axios
-      .delete(`http://localhost:3001/users/${userName}/pokemons/${pokemonName}`)
+      .delete(`${process.env.API_ENDPOINT}/users/${userName}/pokemons/${pokemonName}`)
       .then((response) => {
         setUsers(
           users.map((user) => {

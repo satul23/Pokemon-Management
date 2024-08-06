@@ -74,7 +74,7 @@ const AddPokemon = () => {
     };
 
     axios
-      .post("http://localhost:3001/add-pokemon", { userName, newPokemon })
+      .post(`${process.env.API_ENDPOINT}/add-pokemon`, { userName, newPokemon })
       .then((response) => {
         alert("Pokémon added successfully");
         // Reset form fields
