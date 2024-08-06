@@ -26,7 +26,7 @@ const AddPokemon = () => {
 
     // Fetch user names for dropdown list
     axios
-      .get(`${process.env.API_ENDPOINT}/users`)
+      .get(`${process.env.REACT_APP_API_ENDPOINT}/users`)
       .then((response) => {
         const names = response.data.map((user) => user.name);
         setUserList(names);
@@ -74,7 +74,7 @@ const AddPokemon = () => {
     };
 
     axios
-      .post(`${process.env.API_ENDPOINT}/add-pokemon`, { userName, newPokemon })
+      .post(`${process.env.REACT_APP_API_ENDPOINT}/add-pokemon`, { userName, newPokemon })
       .then((response) => {
         alert("Pokémon added successfully");
         // Reset form fields

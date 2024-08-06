@@ -3,6 +3,7 @@ import axios from "axios";
 import "../cssfiles/AddUser.css";
 
 const AddUser = () => {
+  console.log(process.env.REACT_APP_API_ENDPOINT)
   const [userName, setUserName] = useState("");
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonAbility, setPokemonAbility] = useState("");
@@ -68,7 +69,7 @@ const AddUser = () => {
     };
 
     axios
-      .post(`${process.env.API_ENDPOINT}/users`, userWithPokemon)
+      .post(`${process.env.REACT_APP_API_ENDPOINT}/users`, userWithPokemon)
       .then((response) => {
         alert("User and Pokémon added successfully");
         setUserName("");

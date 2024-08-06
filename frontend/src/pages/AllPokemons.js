@@ -17,7 +17,7 @@ const AllPokemons = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.API_ENDPOINT}/users`)
+      .get(`${process.env.REACT_APP_API_ENDPOINT}/users`)
       .then((response) => setUsers(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -47,7 +47,7 @@ const AllPokemons = () => {
     e.preventDefault();
     axios
       .put(
-        `${process.env.API_ENDPOINT}/users/${currentPokemon.userName}/pokemons/${currentPokemon.pokemonName}`,
+        `${process.env.REACT_APP_API_ENDPOINT}/users/${currentPokemon.userName}/pokemons/${currentPokemon.pokemonName}`,
         currentPokemon
       )
       .then((response) => {
@@ -71,7 +71,7 @@ const AllPokemons = () => {
 
   const handleDelete = (userName, pokemonName) => {
     axios
-      .delete(`${process.env.API_ENDPOINT}/users/${userName}/pokemons/${pokemonName}`)
+      .delete(`${process.env.REACT_APP_API_ENDPOINT}/users/${userName}/pokemons/${pokemonName}`)
       .then((response) => {
         setUsers(
           users.map((user) => {

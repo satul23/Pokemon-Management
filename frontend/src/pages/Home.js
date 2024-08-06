@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.API_ENDPOINT}/users`)
+      .get(`${process.env.REACT_APP_API_ENDPOINT}/users`)
       .then((response) => {
         setUsers(response.data);
       })
