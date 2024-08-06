@@ -1,0 +1,68 @@
+.all-main-div{
+    width: 100%;
+}
+
+.all-h1-div{
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.all-table-div{
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+.button-td{
+    width: 10%;
+}
+.all-button1-div{
+    padding: 1%;
+    width: 35%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.all-button1-div:hover {
+    background-color:cornflowerblue;
+    color: white;
+}
+
+.all-button2-div{
+    padding: 1%;
+    width: 45%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+.all-button2-div:hover {
+    background-color: red;
+    color: white;
+}
+
+.button-td{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.all-tr-div{
+    width: 100%;
+ 
+}
+
+.all-td-div{
+    padding-left: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-td-div1{
+    padding-left: 2.5%;
+}

@@ -1,0 +1,47 @@
+
+
+.root-main-div{
+  width: 100%;
+  position: relative;
+}
+
+.root-video{
+    position: fixed;
+   object-fit: cover;
+   width: 100%;
+}
+
+.root-h1-div{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    padding-top: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.root-button-div{
+    position: absolute;
+    padding-top: 25%;
+    width: 100%;
+    gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.root-button1-div{
+    padding: 1%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.root-button1-div:hover {
+    background-color:cornflowerblue;
+    color: darkblue;
+    transform: translate(10px, 10px);
+}

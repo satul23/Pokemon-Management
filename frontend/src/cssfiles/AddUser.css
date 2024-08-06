@@ -1,0 +1,56 @@
+
+
+.adduser-main-div{
+  width: 100%;
+}
+
+.adduser-h1-div{
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adduser-form-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.adduser-button-div{
+    padding: 1%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.adduser-button-div:hover {
+    background-color:cornflowerblue;
+    color: darkblue;
+    transform: translate(10px, 10px);
+}
+
+.adduser-form-div1{
+    width: 100%;
+    
+}
+
+.adduser-input{
+    display: flex;
+    padding: 1%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: wheat; 
+}
+
+.adduser-select{
+    width: 50%;
+    padding: 1%;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: wheat; 
+}

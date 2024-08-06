@@ -1,0 +1,111 @@
+.main-playground-div{
+    width: 100%;
+    overflow: hidden;
+}
+
+.play-h1-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adduser-select1{
+    width: 12%;
+    padding: 6px;
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: wheat; 
+}
+
+.play-buttons{
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.label-select-div{
+    width: 100%;
+    padding-left: 5%;
+}
+
+.play-user-div{
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.play-box{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    border: 1px solid black; 
+}
+
+.play-main-box{
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
+
+.poke-icon{
+  font-size: 6rem;
+}
+
+.pokem-icon{
+    font-size: 3rem;
+}
+
+.play-buttons-div1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    background-color: lightgreen;
+    font-size: 22px;
+}
+
+.play-buttons-div1:hover{
+    background-color: greenyellow;
+}
+
+.play-buttons-div2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    background-color: lightblue;
+    font-size: 22px;
+}
+
+.play-buttons-div2:hover{
+    background-color: blue;
+}
+
+.play-buttons-div3{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    background-color: lightcoral;
+    font-size: 22px;
+}
+
+.play-buttons-div3:hover{
+    background-color: red;
+}
